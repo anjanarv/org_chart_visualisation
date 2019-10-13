@@ -26,8 +26,18 @@ Array [
     "name": "Alan",
   },
   Object {
+    "id": "220",
+    "managerId": "100",
+    "name": "Martin",
+  },
+  Object {
     "id": "150",
     "name": "Jamie",
+  },
+  Object {
+    "id": "275",
+    "managerId": "100",
+    "name": "Alex",
   },
   Object {
     "id": "400",
@@ -42,15 +52,4 @@ Array [
 ]
 `;
 
-exports[`validating json having valid data 2`] = `
-Array [
-  Object {
-    "managerId": "100",
-    "name": "Martin",
-  },
-  Object {
-    "managerId": "100",
-    "name": "Alex",
-  },
-]
-`;
+exports[`validating json having valid data 2`] = `Array []`;

@@ -9,8 +9,8 @@ test("creating graph with given valid data", () => {
   );
 
   let taskGraph = cytoscapeTraversals.getNodesWithEdges(validPersons);
-  expect(taskGraph.nodes().length).toBe(4);
-  expect(taskGraph.edges().length).toBe(3);
+  expect(taskGraph.nodes().length).toBe(6);
+  expect(taskGraph.edges().length).toBe(5);
 });
 
 test("creating graph with given invalid data having people with no Id", () => {
