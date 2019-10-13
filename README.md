@@ -45,3 +45,14 @@ Navigate to **/public/data/** folder and update the json schema file with .schem
 
 This internally starts watchify for bundling and executes server.js (npm watch | node server.js)
 Access via http://localhost:5000
+
+## Screenshots
+![Image 1](https://github.com/anjanarv/org_chart_visualisation/blob/master/screenshots/MoreTestData.png)
+
+![Image 2](https://github.com/anjanarv/org_chart_visualisation/blob/master/screenshots/Report.png)
+
+![Image 3](https://github.com/anjanarv/org_chart_visualisation/blob/master/screenshots/TestDataGIven.png)
+
+![Image 4](https://github.com/anjanarv/org_chart_visualisation/blob/master/screenshots/TestDataWithNoManagers.png)
+
+
