@@ -6,22 +6,24 @@ const convertToVisFormat = (taskGraph, invalidPersons) => {
   let dataList = [],
     edgesList = [],
     invalidDataList = [];
-  taskGraph.nodes().forEach(node => {
-    node.data() && node.data().id
-      ? dataList.push({
-          id: node.data().id,
-          label: node.data().name
-        })
-      : invalidDataList.push({
-          label: node.data().name
-        });
-  });
-  taskGraph.edges().forEach(edge => {
-    edgesList.push({
-      from: edge.data().source,
-      to: edge.data().target
+  taskGraph &&
+    taskGraph.nodes().forEach(node => {
+      node.data() && node.data().id
+        ? dataList.push({
+            id: node.data().id,
+            label: node.data().name
+          })
+        : invalidDataList.push({
+            label: node.data().name
+          });
     });
-  });
+  taskGraph &&
+    taskGraph.edges().forEach(edge => {
+      edgesList.push({
+        from: edge.data().source,
+        to: edge.data().target
+      });
+    });
 
   //draw separate set of nodes for invalid person data in json
   invalidPersons.length > 0 &&
