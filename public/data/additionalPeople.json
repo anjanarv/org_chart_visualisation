@@ -1,80 +1,92 @@
 [
   {
     "name": "Alan",
-    "id": 100,
+    "id": "100",
     "managerId": "150"
   },
   {
     "name": "Martin",
-    "id": 220,
+    "id": "220",
     "managerId": "1008"
   },
   {
     "name": "Jamie",
-    "id": 150,
+    "id": "150",
     "managerId": "234"
   },
   {
     "name": "Alex",
-    "id": 275,
+    "id": "275",
     "managerId": "100"
   },
   {
     "name": "Steve",
-    "id": 400,
+    "id": "400",
     "managerId": "150"
   },
   {
     "name": "David",
-    "id": 190,
+    "id": "190",
     "managerId": "19010"
   },
   {
     "name": "Olly Wainwright",
-    "id": 234
+    "id": "234"
   },
   {
     "name": "Kuba James",
-    "id": 890,
+    "id": "890",
     "managerId": "190,234"
   },
   {
     "name": "Hebe Flower",
-    "id": 1008,
+    "id": "1008",
     "managerId": "190,150"
   },
   {
     "name": "Benn Compton",
-    "id": 2751,
+    "id": "2751",
     "managerId": "150,190"
   },
   {
     "name": "Niam Wardle",
-    "id": 4002,
+    "id": "4002",
     "managerId": "150"
   },
   {
     "name": "Maud Lynch",
-    "id": 1904
+    "id": "1904"
   },
   {
     "name": "Ananya Higgins",
-    "id": 40021,
+    "id": "40021",
     "managerId": "150"
   },
   {
     "name": "Zahara Chung",
-    "id": 1902,
+    "id": "1902",
     "managerId": "220"
   },
   {
     "name": "Kali Meyer",
-    "id": 1909,
+    "id": "1909",
     "managerId": "150,220"
   },
   {
     "name": "Sian Lott",
-    "id": 19010,
+    "id": "19010",
+    "managerId": "150"
+  },
+  {
+    "name": "Ewan Bauer",
+    "managerId": "150"
+  },
+  {
+    "name": "Eryn Sanders",
+    "managerId": "150"
+  },
+  {
+    "name": "Ioan Arias",
     "managerId": "150"
   }
 ]

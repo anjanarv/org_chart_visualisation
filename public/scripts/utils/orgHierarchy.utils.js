@@ -42,7 +42,7 @@ const convertToVisFormat = (taskGraph, invalidPersons) => {
 const validateJSON = peopleData => {
   let invalidPersons = [],
     validPersons = [];
-  const ajv = new Ajv({ allErrors: true }); // options can be passed, e.g. {allErrors: true}
+  const ajv = new Ajv(); // options can be passed, e.g. {allErrors: true}
   const validate = ajv.compile(schema);
   peopleData &&
     peopleData.forEach(testData => {

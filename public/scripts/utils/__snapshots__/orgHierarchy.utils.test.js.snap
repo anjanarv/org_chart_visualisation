@@ -21,21 +21,21 @@ Array [
 exports[`validating json having valid data 1`] = `
 Array [
   Object {
-    "id": 100,
+    "id": "100",
     "managerId": "150",
     "name": "Alan",
   },
   Object {
-    "id": 150,
+    "id": "150",
     "name": "Jamie",
   },
   Object {
-    "id": 400,
+    "id": "400",
     "managerId": "150",
     "name": "Steve",
   },
   Object {
-    "id": 190,
+    "id": "190",
     "managerId": "400",
     "name": "David",
   },

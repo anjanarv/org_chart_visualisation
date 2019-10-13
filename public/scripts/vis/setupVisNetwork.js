@@ -1,31 +1,19 @@
 const vis = require("vis-network");
 
 module.exports = {
-  // create network with the given data and edges in the visjs format
+  // create valid data and invalid data network with the given data and edges in the visjs format
   createNetwork(dataList, edgesList, invalidPersons) {
     let validPersonsOptions = {
       height: "100%",
       width: "100%",
-      physics: false,
-      color: {
-        hover: {
-          background: "#6E6EFD"
-        }
-      },
+      physics: true,
       layout: {
         hierarchical: {
           direction: "UD",
           sortMethod: "directed"
         }
       },
-      smooth: {
-        type: "cubicBezier",
-        roundness: 0.4
-      },
       interaction: { hover: true },
-      font: {
-        size: 100
-      },
       edges: {
         arrows: {
           to: { enabled: true, type: "arrow" },
@@ -35,13 +23,34 @@ module.exports = {
         width: 2
       },
       nodes: {
-        size: 15,
-
         color: {
           background: "white",
           hover: {
             border: "black",
             background: "yellow"
+          }
+        },
+        scaling: {
+          min: 10,
+          max: 30,
+          label: {
+            enabled: false,
+            min: 14,
+            max: 30,
+            maxVisible: 30,
+            drawThreshold: 5
+          },
+          customScalingFunction: function(min, max, total, value) {
+            if (max === min) {
+              return 4;
+            } else {
+              var scale = 1 / (max - min);
+              return Math.max(0, (value - min) * scale);
+            }
+          },
+          label: {
+            enabled: true,
+            min: 20
           }
         },
 
@@ -53,10 +62,6 @@ module.exports = {
         shape: {
           size: 100
         },
-        shapeProperties: {
-          size: 10
-        },
-
         font: { color: "black", size: 20, strokeWidth: 1 },
         shape: "box"
       }
@@ -65,21 +70,10 @@ module.exports = {
     let invalidPersonsOptions = {
       height: "100%",
       width: "100%",
-      physics: false,
-      color: {
-        hover: {
-          background: "#6E6EFD"
-        }
-      },
+      physics: true,
 
       interaction: { hover: true },
-      font: {
-        size: 100
-      },
-
       nodes: {
-        size: 15,
-
         color: {
           background: "red",
           hover: {
@@ -96,10 +90,6 @@ module.exports = {
         shape: {
           size: 100
         },
-        shapeProperties: {
-          size: 10
-        },
-
         font: { color: "black", size: 20, strokeWidth: 1 },
         shape: "box"
       }

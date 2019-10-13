@@ -1,29 +1,31 @@
 [
   {
     "name": "Alan",
-    "id": 100,
+    "id": "100",
     "managerId": "150"
   },
   {
     "name": "Martin",
-    "managerId": "100"
+    "managerId": "100",
+    "id": "220"
   },
   {
     "name": "Jamie",
-    "id": 150
+    "id": "150"
   },
   {
     "name": "Alex",
-    "managerId": "100"
+    "managerId": "100",
+    "id": "275"
   },
   {
     "name": "Steve",
-    "id": 400,
+    "id": "400",
     "managerId": "150"
   },
   {
     "name": "David",
-    "id": 190,
+    "id": "190",
     "managerId": "400"
   }
 ]

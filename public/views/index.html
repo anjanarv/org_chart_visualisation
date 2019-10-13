@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <script src="dist/bundle.js"></script>
+
+  <style type="text/css">
+    body {
+      font: 10pt arial;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .validHierarchyRepresentation {
+      width: 50vw;
+      height: 100vh;
+      border: 1px solid lightgray;
+    }
+
+    .invalidHierarchyRepresentation {
+      width: 50vw;
+      height: 100vh;
+      border: 1px solid lightgray;
+    }
+    .hero-bkg-animated {
+      background: gray url(https://subtlepatterns.com/patterns/geometry2.png)
+        repeat 0 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      height: 300px;
+      padding-top: 120px;
+      box-sizing: border-box;
+      -webkit-animation: slide 20s linear infinite;
+    }
+
+    .hero-bkg-animated h1 {
+      font-family: sans-serif;
+    }
+    @-webkit-keyframes slide {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -400px 0;
+      }
+    }
+  </style>
+  <body onload="showTestData();" class="hero-bkg-animated">
+    <div>
+      <h1 style="font-size:20;color:darkblue;text-align:center">
+        Org Hierarchy
+      </h1>
+    </div>
+    <div class="navbar">
+      <a href="report" id="report">Report</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="showTestData()">
+          Show Data
+        </button>
+        <div class="dropdown-content">
+          <a href="#" onclick="showTestData()">Test Data given</a>
+          <a href="#" onclick="showPersonDataWithNoManager()"
+            >Test Data having no managers</a
+          >
+          <a href="#" onclick="showPersonDataWithMultipleManagers()"
+            >Test Data with multiple managers</a
+          >
+          <a href="#" onclick="showPeopleWithNoId()">Test Data with No ID</a>
+          <a href="#" onclick="showAdditionalPersons()">More test data</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <h2>Active Crews</h2>
+
+        <div
+          id="validHierarchyRepresentation"
+          class="validHierarchyRepresentation"
+        ></div>
+      </div>
+      <div>
+        <h2>Resigned Crews / Missing Data [ Person with no Id ]</h2>
+        <div
+          id="invalidHierarchyRepresentation"
+          class="invalidHierarchyRepresentation"
+        >
+          <h2>Invalid Persons</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

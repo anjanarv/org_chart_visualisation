@@ -1,29 +1,29 @@
 [
   {
     "name": "Schmidt Jackson",
-    "id": 100
+    "id": "100"
   },
   {
     "name": "Martin Christian",
-    "id": 220
+    "id": "220"
   },
   {
     "name": "Raheem Patel",
-    "id": 150
+    "id": "150"
   },
   {
     "name": "Bodhi French",
-    "id": 275,
+    "id": "275",
     "managerId": "100"
   },
   {
     "name": "Roxie Rivers",
-    "id": 400,
+    "id": "400",
     "managerId": "150"
   },
   {
     "name": "David Chandler",
-    "id": 190,
+    "id": "190",
     "managerId": "150"
   }
 ]

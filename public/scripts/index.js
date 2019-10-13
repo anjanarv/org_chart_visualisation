@@ -16,9 +16,7 @@ showTestData = () => {
   let { invalidPersons, validPersons } = validateJSON(
     peopleInGivenCodingChallenge
   );
-
   let taskGraph = computeCytoscapeTraversals.getNodesWithEdges(validPersons);
-
   let { dataList, edgesList, invalidDataList } = convertToVisFormat(
     taskGraph,
     invalidPersons
@@ -29,9 +27,7 @@ showTestData = () => {
 // display people having no manager Id in the test data
 showPersonDataWithNoManager = () => {
   let { invalidPersons, validPersons } = validateJSON(personDataWithNoManager);
-
   let taskGraph = computeCytoscapeTraversals.getNodesWithEdges(validPersons);
-
   let { dataList, edgesList, invalidDataList } = convertToVisFormat(
     taskGraph,
     invalidPersons
@@ -45,7 +41,6 @@ showPersonDataWithMultipleManagers = () => {
   let { invalidPersons, validPersons } = validateJSON(
     peopleWithMultipleManagers
   );
-
   let taskGraph = computeCytoscapeTraversals.getNodesWithEdges(validPersons);
   let { dataList, edgesList, invalidDataList } = convertToVisFormat(
     taskGraph,
@@ -58,9 +53,7 @@ showPersonDataWithMultipleManagers = () => {
 // display more people with more test data
 showAdditionalPersons = () => {
   let { invalidPersons, validPersons } = validateJSON(additionalPeople);
-
   let taskGraph = computeCytoscapeTraversals.getNodesWithEdges(validPersons);
-
   let { dataList, edgesList, invalidDataList } = convertToVisFormat(
     taskGraph,
     invalidPersons
@@ -71,9 +64,7 @@ showAdditionalPersons = () => {
 // display people with no Id in them which is invalid data as per the json schema
 showPeopleWithNoId = () => {
   let { invalidPersons, validPersons } = validateJSON(peopleWithNoId);
-
   let taskGraph = computeCytoscapeTraversals.getNodesWithEdges(validPersons);
-
   let { dataList, edgesList, invalidDataList } = convertToVisFormat(
     taskGraph,
     invalidPersons
