@@ -1,0 +1,32 @@
+{
+  "name": "org_hierarchy",
+  "version": "1.0.0",
+  "description": "Creates a hierarchical representation of a team/org",
+  "main": "server.js",
+  "entry point": "server.js",
+  "scripts": {
+    "watch": "watchify public/scripts/computeHierarchy.js -o myBundle > public/scripts/bundle.js -v",
+    "build": "browserify public/scripts/computeHierarchy.js --s myBundle > public/scripts/bundle.js",
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "author": "Anjana",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "body-parser": "^1.19.0",
+    "cytoscape": "^3.11.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jsonschema": "^1.2.4",
+    "supertest": "^4.0.2",
+    "vis-network": "^6.1.1"
+  }
+}
