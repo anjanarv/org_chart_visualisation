@@ -2,12 +2,11 @@
   "name": "org_hierarchy",
   "version": "1.0.0",
   "description": "Creates a hierarchical representation of a team/org",
-  "main": "server.js",
-  "entry point": "server.js",
+  "main": "index.js",
+  "entry point": "index.js",
   "scripts": {
-    "watch": "watchify public/scripts/computeHierarchy.js -o myBundle > public/scripts/bundle.js -v",
-    "build": "browserify public/scripts/computeHierarchy.js --s myBundle > public/scripts/bundle.js",
-    "start": "node server.js",
+    "watch": "watchify public/scripts/index.js -d -o public/dist/bundle.js -v",
+    "start": "npm run watch | node server.js",
     "test": "jest"
   },
   "jest": {

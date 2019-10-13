@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validating json having invalid data 1`] = `Array []`;
+
+exports[`validating json having invalid data 2`] = `
+Array [
+  Object {
+    "managerId": "150",
+    "name": "Alan",
+  },
+  Object {
+    "managerId": "100",
+    "name": "Martin",
+  },
+  Object {
+    "name": "Jamie",
+  },
+]
+`;
+
+exports[`validating json having valid data 1`] = `
+Array [
+  Object {
+    "id": 100,
+    "managerId": "150",
+    "name": "Alan",
+  },
+  Object {
+    "id": 150,
+    "name": "Jamie",
+  },
+  Object {
+    "id": 400,
+    "managerId": "150",
+    "name": "Steve",
+  },
+  Object {
+    "id": 190,
+    "managerId": "400",
+    "name": "David",
+  },
+]
+`;
+
+exports[`validating json having valid data 2`] = `
+Array [
+  Object {
+    "managerId": "100",
+    "name": "Martin",
+  },
+  Object {
+    "managerId": "100",
+    "name": "Alex",
+  },
+]
+`;

@@ -4,7 +4,6 @@ const app = express();
 app.set("view engine", "html");
 app.engine("html", require("ejs").renderFile);
 app.use(express.static("public"));
-app.use(express.static("images"));
 
 app.get("/", async (req, res, next) => {
   res.render("index", { title: "ejs" });
