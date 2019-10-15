@@ -2,30 +2,9 @@
 
 An Express web application to visually represent the reporting structure of an organization from JSON data.
 
-## Pre requisites
+## Install dependencies
 
-- **Express.js**
-
-            npm install express
-
-- **Cytoscape**
-
-            npm install cytoscape
-
-- **Ajv**
-
-            npm install ajv
-
-- **Vis-network**
-
-            npm install vis-network
-
-* **Watchify**
-
-            npm install watchify
-
-* **Jest**
-  npm install jest
+             npm i
 
 ## Test Data update
 
