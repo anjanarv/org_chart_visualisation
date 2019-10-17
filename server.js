@@ -3,9 +3,10 @@ const app = express();
 const path = require("path");
 
 app.set("view engine", "html");
+app.set("views", __dirname + "/public/views");
+
 app.engine("html", require("ejs").renderFile);
 app.use(express.static("public"));
-app.set("views", __dirname + "/public/views");
 
 app.get("/", async (req, res, next) => {
   res.render("index", { title: "ejs" });
